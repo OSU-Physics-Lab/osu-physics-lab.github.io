@@ -51,7 +51,7 @@
         var USERINPUT1 = document.FORCE.CHARGE1.value, 
 		USERINPUT2 = document.FORCE.CHARGE2.value, 
 		USERINPUT3 = document.FORCE.DISTANCE1.value,
-            RESULT = UNCERT*((Math.PI*Math.sign(USERINPUT1*USERINPUT2)*Math.sqrt(Math.abs(USERINPUT1*USERINPUT2)))/(USERINPUT3**3)); 
+            RESULT = UNCERT*((Math.PI*USERINPUT1**3*USERINPUT2)/(USERINPUT3**3)); 
         document.FORCE.OUTPUT1.value = RESULT.toExponential(3);
     }
 </script>
